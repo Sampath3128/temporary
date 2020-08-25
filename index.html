@@ -9,6 +9,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <style>
+            .center{
+                margin-left: auto;
+                margin-right: auto;
+            }
             #navlink:hover{
                 cursor: pointer;
                 background-color: #515157;
@@ -20,6 +24,16 @@
             #navlink:active{
                 background-color: #515157;
                 color: white;
+            }
+            #footericons:hover{
+                background-color: #515157;
+                color: #aeb1b4;
+            }
+            #footericons a{
+                font-size: 25px;
+            }
+            #footericons a:hover{
+                font-size: 28px;
             }
         </style>
     </head>
@@ -92,5 +106,78 @@
                 
             </div>
         </div>
+        <div class="jumbotron jumbotron-fluid bg-dark" style="margin-top: 25px;">
+            <div class="container">
+                <h3 style="margin-left: 25px;" class="text-light">Comments:</h3><hr>
+                <form action="#" style="margin-left: 25px;">
+                    <textarea cols="75" rows="5" placeholder="Comments here..." required></textarea><br><br>
+                    <button style="width: 100px;" type="submit" class="btn btn-primary">Post</button>
+                </form><br>
+            </div>
+            <table class="center">
+                <tr>
+                    <td><button onclick="liked()" class="btn"><span style="color: gainsboro;font-size: 20px;" class="fas fa-thumbs-up"></span></button><br></td>
+                    <td><p class="text-center text-light" id="likesvalue"></p></td>
+                    <td><button onclick="disliked()" class="btn"><span style="color: gainsboro;font-size: 20px;" class="fas fa-thumbs-down"></span></button><br></td>
+                    <td><p class="text-center text-light" id="dislikesvalue"></p></td>
+                </tr>
+            </table>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center text-success">References</h4>
+                    <ul class="list-group list-group-flush text-center text-light">
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="text-center text-success">Books</h4>
+                    <ul class="list-group list-group-flush text-center text-light">
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                    </ul><br>
+                    <table class="table bg-dark table-borderless">
+                        <tr>
+                            <td id="footericons" class="text-center"><a href="#"><span class="fab fa-facebook-f" style="color: gainsboro"></span></a></td>
+                            <td id="footericons" class="text-center"><a href="#"><span class="fab fa-twitter" style="color: gainsboro"></span></a></td>
+                            <td id="footericons" class="text-center"><a href="#"><span class="fab fa-instagram" style="color: gainsboro"></span></a></td>
+                            <td id="footericons" class="text-center"><a href="#"><span class="fab fa-telegram" style="color: gainsboro"></span></a></td>
+                            <td id="footericons" class="text-center"><a href="#"><span class="fab fa-google" style="color: gainsboro"></span></a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center text-success">Other Links</h4>
+                    <ul class="list-group list-group-flush text-center text-light">
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            var likes=0;
+            var dislikes=0;
+            document.getElementById("likesvalue").innerHTML=likes;
+            document.getElementById("dislikesvalue").innerHTML=dislikes;
+            function liked(){
+                likes=likes+1;
+                document.getElementById("likesvalue").innerHTML=likes;
+            }
+            function disliked(){
+                dislikes = disliked + 1;
+                document.getElementById("dislikesvalue").innerHTML=dislikes;
+            }
+        </script>
     </body>
 </html>
