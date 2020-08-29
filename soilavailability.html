@@ -31,12 +31,12 @@
                 <div class="col-11 center"><h1 style="padding: 40px">Crop Yield Disease Prediction System<br><small>CYDPS</small></h1></div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark" style="margin-top: -8px;">
+        <nav id="navbar" class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-top: -8px;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+                <ul id="nav1" class="navbar-nav">
                   <li class="nav-item">
                       <a id="navlink" class="btn nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
                   </li>
@@ -44,14 +44,16 @@
                     <a id="navlink" class="btn nav-link" href="cropproperties.html"><i class="fas fa-tree"></i> Crop Properties</a>
                   </li>
                   <li class="nav-item">
-                    <a id="navlink" class="btn nav-link active" href="soilavailability.html"><i class="fas fa-map"></i> Soil Availability</a>
-                  </li>
-                  <li class="nav-item">
-                    <a id="navlink" class="btn nav-link" href="marketprices.html"><i class="fas fa-chart-line"></i> Market Prices</a>
-                  </li>
-                  <li class="nav-item">
                     <a id="navlink" class="btn nav-link" href="help.html"><i class="fas fa-phone"></i> Help</a>
                   </li>    
+                </ul>
+                <ul id="nav2" class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="navlink" class="btn btn-success text-light nav-link" href="predictleaf.html"><i class="fas fa-cannabis"></i> Predict Disease</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlink" class="btn btn-success text-light nav-link" href="predictcrop.html"><i class="fas fa-seedling"></i> Predict Crop</a>
+                    </li>
                 </ul>
             </div>  
         </nav>
@@ -60,7 +62,8 @@
                 
             </div>
             <div class="col-10">
-                <input style="margin-top: 20px;" class="form-control" id="myInput" type="text" placeholder="Search..">
+                <h3 style="margin-top:25px;">Search for your district</h3>
+                <input style="margin-top: 20px;" class="form-control" id="myInput" type="text" placeholder="Search for your district name...">
                 <br>
                 <table id="soilavailability" class="table table-striped table-bordered">
                     <tr>
