@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Predict Disease</title>
+	<link rel = "icon" href ="Logo.jpeg" class="rounded-circle" type = "image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <style type="text/css">
+        	#nav1,#nav2 a{
+                margin-left: 10px;
+            }
+        </style>
+</head>
+<body class="bg-light">
+	<div class="container-fluid" style="background-image: url(https://sampath3128.github.io/cydpssih/crop1.jpg)">
+        <div class="row">
+            <div class="col-1"><img class="rounded-circle" src="Logo.jpeg" style="width: 100px;height: 100px;margin-top: 32px;margin-left: 30px;">
+            </div>
+            <div class="col-11 center">
+            	<h1 style="padding: 40px">Crop Yield Disease Prediction System<br><small>CYDPS</small></h1>
+            </div>
+        </div>
+    </div>
+    <nav id="navbar" class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-top: -8px;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul id="nav1" class="navbar-nav">
+                  <li class="nav-item">
+                      <a id="navlink" class="btn nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a>
+                  </li>
+                    <li class="nav-item">
+                    <a id="navlink" class="btn nav-link" href="cropproperties.html"><i class="fas fa-tree"></i> Crop Properties</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="navlink" class="btn nav-link" href="help.html"><i class="fas fa-phone"></i> Help</a>
+                  </li>    
+                </ul>
+                <ul id="nav2" class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="navlink" class="btn btn-success text-light nav-link" href="predictleaf.html"><i class="fas fa-cannabis"></i> Predict Disease</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlink" class="btn btn-success text-light nav-link" href="Predictcrop.html"><i class="fas fa-seedling"></i> Predict Crop</a>
+                    </li>
+                </ul>
+            </div>  
+        </nav>
+    <div class="row">
+    	<div class="col bg-warning" style="padding-top: 25px;padding-bottom: 25px;">
+    		<h3 style="margin-top: 50px;" class="text-center">Instructions</h3>
+    		<hr>
+    		<ul class="text-dark"style="margin-left: 50px;">
+    			<li>Select your crop.</li>
+    			<li>Please provide the image of the leaf of your crop.</li>
+    			<li>Make sure that the image is clear.</li>
+    			<li>If you have any troubles with the page please <a href="help.html" class="text-primary">click here</a></li>
+    		</ul>
+    	</div>
+    	<div class="col bg-light">
+    		<h2 class="text-center" style="margin-top: 15px;">Predict Disease</h2><hr>
+    		<div class="container" style="padding: 25px;">
+				<form action="">
+					<h3>Please give the following details:</h3>
+				  	<div class="form-group">
+				    	<label for="crops">Select Crop:</label>
+				    	<select class="form-control" id="cars" name="cars" required>
+				    		<option value="" disabled selected hidden>Select</option>
+					  		<option value="rice">Rice</option>
+					  		<option value="wheat">Wheat</option>
+					  		<option value="sugarcane">Sugarcane</option>
+						</select>
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="leafimage">Leaf Image:</label>
+				    	<input type="file" class="bg-light form-control" id="cropimg" required>
+				  	</div>
+				  	<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+    	</div>
+    </div>
+    <div class="bg-dark">
+    	<div class="row" style="padding-top: 25px;">
+                <div class="col">
+                    <h4 class="text-center text-success">References</h4>
+                    <ul class="list-group list-group-flush text-center text-light">
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="text-center text-success">Books</h4>
+                    <ul class="list-group list-group-flush text-center text-light">
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                    </ul><br>
+                    <table class="table bg-dark table-borderless">
+                        <tr>
+                            <td id="footericons" class="text-center"><a href="#"><span class="fab fa-facebook-f" style="color: gainsboro"></span></a></td>
+                            <td id="footericons" class="text-center"><a href="#"><span class="fab fa-twitter" style="color: gainsboro"></span></a></td>
+                            <td id="footericons" class="text-center"><a href="#"><span class="fab fa-instagram" style="color: gainsboro"></span></a></td>
+                            <td id="footericons" class="text-center"><a href="#"><span class="fab fa-telegram" style="color: gainsboro"></span></a></td>
+                            <td id="footericons" class="text-center"><a href="#"><span class="fab fa-google" style="color: gainsboro"></span></a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center text-success">Other Links</h4>
+                    <ul class="list-group list-group-flush text-center text-light">
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                        <li class="list-group-item bg-dark">Item</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
