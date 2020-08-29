@@ -1,6 +1,7 @@
 <html>
     <head>
-        <title>cydps</title>
+        <title>CYDPS-Soil Availability</title>
+        <link rel = "icon" href ="Logo.jpeg" class="rounded-circle" type = "image/x-icon">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -59,11 +60,67 @@
                 
             </div>
             <div class="col-10">
-                
+                <input style="margin-top: 20px;" class="form-control" id="myInput" type="text" placeholder="Search..">
+                <br>
+                <table id="soilavailability" class="table table-striped table-bordered">
+                    <tr>
+                        <th>District</th>
+                        <th>Soil Types Available in the area</th>
+                    </tr>
+                    <tr>
+                        <td>Anantapur</td><td>Red and Black Soils</td>
+                    </tr>
+                    <tr>
+                        <td>Chittor</td><td>Red loamy soil, Laterite soil, Deep black soil</td>
+                    </tr>
+                    <tr>
+                        <td>East Godavari</td><td>Alluvial (clay loamy) red soils, Sandy loams and Sandy clay</td>
+                    </tr>
+                    <tr>
+                        <td>Guntur</td><td>Black cotton, Red loamy soils</td>
+                    </tr>
+                    <tr>
+                        <td>YSR Kadapa</td><td>Red and Black soils</td>
+                    </tr>
+                    <tr>
+                        <td>Krishna</td><td>Black Cotton, Sand clay loams, Red loams</td>
+                    </tr>
+                    <tr>
+                        <td>Kurnool</td><td>Insitu soil, Deep red sandy soils, Shallow red sandy soils, Black soil plains, Alluvial soils</td>
+                    </tr>
+                    <tr>
+                        <td>Nellore</td><td>Black soil, Red soil and Clay loamy soil</td>
+                    </tr>
+                    <tr>
+                        <td>Prakasam</td><td>Red Soil, Black Soil, Sandy loam soil, Sandy soil</td>
+                    </tr>
+                    <tr>
+                        <td>Srikakulam</td><td> Red soil, Red loams, Sandy loams, Sandy soils, Black soils and Alluvial soils</td>
+                    </tr>
+                    <tr>
+                        <td>Visakhapatnam</td><td>Sandy and Rocky Soils</td>
+                    </tr>
+                    <tr>
+                        <td>Vizianagaram</td><td>Red loamy soil, Red sandy soil, Deltaic alluvial soil, Laterite soil Coastal soil</td>
+                    </tr>
+                    <tr>
+                        <td>West Godavari</td><td>Red soil, Black cotton soil, Deltaic alluvial soil, Coastal sand</td>
+                    </tr>
+                </table>
             </div>
             <div class="col-1">
                 
             </div>
         </div>
+        <script>
+            $(document).ready(function(){
+              $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#soilavailability tr").filter(function() {
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+              });
+            });
+        </script>
     </body>
 </html>
