@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>CYDPS-Home</title>
-        <link rel = "icon" href ="Logo.jpeg" class="rounded-circle" type = "image/x-icon">
+        <link rel = "icon" href ="https://sampath3128.github.io/cydpssih/Logo.jpeg" class="rounded-circle" type = "image/x-icon">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -81,7 +81,7 @@
             }
             #nav1,#nav2 a{
                 margin-left: 10px;
-            }
+            } 
             #navlink:active{
                 background-color: #515157;
                 color: white;
@@ -101,7 +101,7 @@
     <body>
         <div class="container-fluid" style="background-image: url(https://sampath3128.github.io/cydpssih/crop1.jpg)">
             <div class="row">
-                <div class="col-1"><img class="rounded-circle" src="Logo.jpeg" style="width: 100px;height: 100px;margin-top: 32px;margin-left: 30px;"></div>
+                <div class="col-1"><img class="rounded-circle" src="https://sampath3128.github.io/cydpssih/Logo.jpeg" style="width: 100px;height: 100px;margin-top: 32px;margin-left: 30px;"></div>
                 <div class="col-11 center"><h1 style="padding: 40px">Crop Yield Disease Prediction System<br><small>CYDPS</small></h1></div>
             </div>
         </div>
@@ -126,36 +126,204 @@
                         <a id="navlink" class="btn btn-success text-light nav-link" href="predictleaf.html"><i class="fas fa-cannabis"></i> Predict Disease</a>
                     </li>
                     <li class="nav-item">
-                        <a id="navlink" class="btn btn-success text-light nav-link" href="predictcrop.html"><i class="fas fa-seedling"></i> Predict Crop</a>
+                        <a id="navlink" class="btn btn-success text-light nav-link" href="Predictcrop.html"><i class="fas fa-seedling"></i> Predict Crop</a>
                     </li>
                 </ul>
             </div>  
         </nav>
-
-        <div class="slideshow-container">
-            <div class="mySlides">
-                <div class="numbertext">1 / 4</div>
-                    <img src="Farming1.jfif" class="img-thumbnail" style="width: 700px;height: 500px;">
+        <div class="row">
+            <div class="col">
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                            <img src="Farming1.jfif" class="img-thumbnail" style="width: 700px;height: 500px;">
+                        </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="Farming2.jpg" class="img-thumbnail" style="width: 700px;height: 500px;">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="Farming3.jpg" class="img-thumbnail" style="width: 700px;height: 500px;">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="Farming4.jpg" class="img-thumbnail" style="width: 700px;height: 500px;">
+                    </div>
                 </div>
-            <div class="mySlides">
-                <div class="numbertext">2 / 4</div>
-                <img src="Farming2.jpg" class="img-thumbnail" style="width: 700px;height: 500px;">
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
             </div>
-            <div class="mySlides">
-                <div class="numbertext">3 / 4</div>
-                <img src="Farming3.jpg" class="img-thumbnail" style="width: 700px;height: 500px;">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">4 / 4</div>
-                <img src="Farming4.jpg" class="img-thumbnail" style="width: 700px;height: 500px;">
+            <div class="col">
+                <h2 style="margin-top: 25px;">Agriculture in India</h2><hr>
+                <p>Farming is the chief occupation in our country. Over 16% of the GDP is contributed by the farming sector and it is occupation to about 60% of the people in our country.</p>
+                <p>Now a days farmers are loosing their income from farming due to enormous use of pesticides and many deadly diseases affecting the crops.</p>
+                <p>The chief food crops grown in our country are <i>PADDY</i> and <i>WHEAT</i>. Many varieties of Rice and wheat are grown off everywhere all over the country.</p>
+                <h3>Why plants are infected?</h3>
+                <hr>
+                <p>Many <i>bacteria</i> and <i>fungi</i> are causing many diseases to the different crops. Extreme use of pesticides and fungicides causing development of resistance by the bacteria and fingi causing more damage to the crop as the pesicides and fungicides are not effective on them.</p>
+                <p>Also nutrient deficiencies in the soil also cause diseases in crop</p>
             </div>
         </div>
-        <br>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
+        <div class="row" style="margin-top: 25px;">
+            <div class="col">
+                <h3 class="text-center">PADDY</h3>
+                <hr>
+                <ul>
+                    <li>The common species grown in Asia are <i>Oryza Sativa.</i></li>
+                    <li>And other species are <i>Oryza Glaberrina</i> in Africa.</li>
+                </ul>
+                <p style="margin-left: 20px;">Nearly 6,000 varieties of rice are cultivated in INDIA.</p>
+                <h4 style="margin-left: 20px;">Some Bacterial diseases of Paddy:</h4>
+                <table style="margin-left: 20px;" class="table table-borderless">
+                    <tr>
+                        <th>Disease Name</th>
+                        <th>Caused By</th>
+                    </tr>
+                    <hr>
+                    <tr>
+                        <td>Bacterial Blight</td>
+                        <td>Xanthomaonas Oryzae</td>
+                    </tr>
+                    <tr>
+                        <td>Bacterial leaf streak</td>
+                        <td>Xanthomonas Oryzae</td>
+                    </tr>
+                    <tr>
+                        <td>Foot Rot</td>
+                        <td>Erwinia Chrysanthemi</td>
+                    </tr>
+                    <tr>
+                        <td>Grain Rot</td>
+                        <td>Burlcholderia Glumae</td>
+                    </tr>
+                </table>
+                <h4 style="margin-left: 20px;">Some Fungal diseases of Paddy</h4>
+                <table class="table table-borderless" style="margin-left: 20px;">
+                    <tr>
+                        <th>Disease</th>
+                        <th>Caused By</th>
+                    </tr>
+                    <tr>
+                        <td>Leaf Smut</td>
+                        <td>Entyloma Oryzae</td>
+                    </tr>
+                    <tr>
+                        <td>Brown Spot</td>
+                        <td>Lochlibolus</td>
+                    </tr>
+                    <tr>
+                        <td>Root Rot</td>
+                        <td>Fusorium Species</td>
+                    </tr>
+                    <tr>
+                        <td>Stem Rot</td>
+                        <td>Magnaporthe Salumi</td>
+                    </tr>
+                </table>
+                <p style="margin-left: 20px;">Not only microbes are the causative organisms of diseases.There are some diseases that are caused due to environmental conditins, nutrient deficiency and other conditions.</p>
+                <p style="margin-left: 20px;">Example:</p>
+                <table style="margin-left: 20px;" class="table table-borderless">
+                    <tr>
+                        <th>Disease</th>
+                        <th>Caused By</th>
+                    </tr>
+                    <tr>
+                        <td>Bronzing</td>
+                        <td>Deficiency in soil</td>
+                    </tr>
+                    <tr>
+                        <td>Cold Injury</td>
+                        <td>Due to very low temperature</td>
+                    </tr>
+                    <tr>
+                        <td>Pecky Rice</td>
+                        <td>Due to feeding injury of rice stink bug.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <h3 class="text-center">WHEAT</h3>
+                <hr>
+                <p style="margin-left: 20px;">The common wheat species grown in India are</p>
+                <ul>
+                    <li><i>Triticum Aestivum:</i>It is a staple food and is used extremely in our country. Many bacterial, fungi, viruses are there which cause diseases to wheat.</li>
+                </ul>
+                <h4 style="margin-left: 20px;">Some Bacterial diseases of Wheat:</h4>
+                <hr>
+                <table class="table table-borderless" style="margin-left: 20px;">
+                    <tr>
+                        <th>Disease</th>
+                        <th>Caused By</th>
+                    </tr>
+                    <tr>
+                        <td>Bacterial Leaf Blight</td>
+                        <td>Pseudomanas Syringae</td>
+                    </tr>
+                    <tr>
+                        <td>Pink Seed Disease</td>
+                        <td>Feronia Rhapontic</td>
+                    </tr>
+                </table>
+                <h4 style="margin-left: 20px;">Some Fungal Diseases of Wheat:</h4>
+                <table class="table table-borderless">
+                    <tr>
+                        <th>Disease</th>
+                        <th>Caused By</th>
+                    </tr>
+                    <tr>
+                        <td>Ergot</td>
+                        <td>Claviceps Purpurea</td>
+                    </tr>
+                    <tr>
+                        <td>Leaf Rust</td>
+                        <td>Puccinia Triticana</td>
+                    </tr>
+                    <tr>
+                        <td>Brown Rust</td>
+                        <td>Puccinia Triticana</td>
+                    </tr>
+                    <tr>
+                        <td>Powdery Mildew</td>
+                        <td>erysiphe graminis</td>
+                    </tr>
+                </table>
+                <h4 style="margin-left: 20px;">Some Viral Diseases of Wheat:</h4>
+                <table class="table table-borderless">
+                    <tr>
+                        <th>Disease</th>
+                        <th>Caused By</th>
+                    </tr>
+                    <tr>
+                        <td>Brome Mosaic</td>
+                        <td>Bromo Virus</td>
+                    </tr>
+                    <tr>
+                        <td>Wheat Yellow Leaf</td>
+                        <td>Closterovirus</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Other diseases:</td>
+                    </tr>
+                    <tr>
+                        <td>Ceral Cyst</td>
+                        <td>Heterodera Avenae</td>
+                    </tr>
+                    <tr>
+                        <td>Root Knot</td>
+                        <td>Mebidogyne Species</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <p>Organic manure and decreasingthe use of pesticides can increase the growth of crops. A very new Technology is being called "Genetic Engineering".Through this hybrid variety of plants are being made.</p>
+            <p>Pest resistant plants, disease resistant plants, plants controlling the environmental stress are being made by altering their genetic material. This improves the crop production and also protect the crops from diseases.</p>
         </div>
         <div class="row" style="margin-top: 25px;">
             <div class="col-1">
@@ -168,7 +336,7 @@
                         <h3>Predict the disease</h3>
                         <hr>
                         <p>Naturally all the crops gets effeted by some diseases due to fungs or some other bacteria. Due to this there may be a great loss in the yield of the crop that leads to huge loss in the profit of the farmer. But there are some remedies that can be taken to prevent the crop from getting infected. And now-a-days it became so difficult to know the disease caused to the crop.<br>Here you can predict the disease that occured to your crop just by the single image of the leaf of your crop. And you can also come to know about the preventive measures that are to be taken to prevent the disease and the pesticides or fungicides that are to be used to your crop.</p>
-                        <a href="predictleaf.html" class="btn btn-primary">Predict Now</a>
+                        <a href="#" class="btn btn-primary">Predict Now</a>
                         <p><br>With this one can easily learn about the preventive measures and can eaily go through them and can implement and can get the best results.</p>
                     </div>
                 </div>
@@ -177,7 +345,7 @@
                         <h3>Predict the crop</h3>
                         <hr>
                         <p>Before the farmer starts cultivate a crop in his field he has to know about the soil available in his field and then he has to choose the crop to cultivate based on the season. As in all seasons one cannot cultivate a single crop. So in relation with the weather conditions of the upcoming months the farmer chooses the crop, that suits the required condiotions of the crop.<br>Here one can get the crop that will give good yield to the farmer based on the soil type availablein the region of the farmer.</p>
-                        <a class="btn btn-primary" href="predictcrop.html">Predict Now</a>
+                        <a class="btn btn-primary" href="#">Predict Now</a>
                     </div>
                     <img src="https://sampath3128.github.io/cydpssih/rice infected1.jpg" class="align-self-center mr-3" style="width:300px">
                 </div>
